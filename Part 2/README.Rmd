@@ -1,0 +1,110 @@
+---
+output: pdf_document
+---
+# Statistical inference - Course Project: Part 2
+
+## Overview
+
+This project aims to analyze the Tooth Growth database using confidence intervals and/or tests. This dataset has 60 observations and 3 variables, and a summary was provided with a brief of exploratory analysis. As a results of this project, supplement type has no effect on tooth growth and increasing the dose level leads to increased tooth growth.
+
+
+```{r loading_packages, echo = FALSE, warning=FALSE,message=FALSE}
+# Loading libraries
+library(ggplot2)
+library(dplyr)
+library(datasets)
+```
+
+## Requeriments, Settings, and Load Data
+* Requirements to reproduce this exercise: `ggplot2`, `dplyr`, and `datasets`.
+* Make a copy of the original dataset and converting into a `dplyr` table.
+```{r load_ToothGrowth, echo = TRUE}
+dataset_tg <- ToothGrowth
+dataset_tg <- tbl_df(dataset_tg)
+```
+
+## A brief exploratory analysis of the dataset
+
+A data frame with 60 observations on 3 variables.
+
+How is the data structure:
+```{r str, echo = FALSE}
+str(dataset_tg)
+```
+
+*Note: The experiment counts with two kinds of supplements (`VC` or `JC`) and there are 3 dose variation (`0.5`, `1.0`, and `2.0` mg/day).*
+
+To synthesize all information we will use one graph.
+```{r graph, echo = TRUE,fig.width=10,fig.height=4}
+ggplot(aes(x=supp, y=len), data=dataset_tg) + geom_boxplot(aes(fill=supp)) + xlab("Supplement type") +ylab("Tooth length (mm)") 
+```
+
+## Provide a basic summary of the data
+
+Summary of this dataset:
+```{r summary, echo = FALSE}
+summary(dataset_tg)
+```
+
+For futher more information about each variable, please read this [document]([1]).
+
+[1]: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ToothGrowth.html
+
+## Compare tooth growth by supplement and dose
+
+There are more than one comparison of tooth growth by supplement (`OJ` and `VC`) and dose. Thus, to turn this study much clearly we divided this section into 3 parts: Comparison between supplements, 1mg and 0.5 mg dose, and 2 and 1 mg dose.
+
+#### Test 1: Growth Tooth Differences between supplements OJ and VC
+
+We are testing if exist some differences between those supplements. It means, we are looking for a p value greater then 0.05. Thus, we need to assume two hypotesis: `Ho` equals means and `H1` means are differents.
+
+First of all, we need to check the `len` variance between `OJ` and `VC` supplement.
+```{r variance, echo = FALSE}
+# Subsetting the ToothGrowth to acquire only OJ observations
+dataset_tg_OJ <- filter(dataset_tg,supp == "OJ")
+# Len Variance when used OJ supplement 
+var_len_OJ <- var(dataset_tg_OJ$len)
+# Subsetting the ToothGrowth to acquire only VC observations
+dataset_tg_VC <- filter(dataset_tg,supp == "VC")
+# Len Variance when used VC supplement 
+var_len_VC <- var(dataset_tg_VC$len)
+```
+
+Those variance are far different so the `var.equal` should be set to `FALSE` (`Len` Variance using OJ =`r var_len_OJ` and `Len` Variance using VC = `r var_len_VC`). Now, we can use de `t.test` to compare the supplements performances are the same.
+
+```{r t_test_OJ_VC, echo = TRUE}
+t.test(dataset_tg_OJ$len, dataset_tg_VC$len, paired = FALSE, var.equal = FALSE)
+```
+
+The p-value of the test is 0.06. It means we do not have evidence to reject the null hypothesis. Supplement types seems to have no impact on Tooth growth.
+
+#### Test 2: Growth Tooth Differences by dosages 2 and 1 mg/day
+
+For this test we define the `Ho` as the null hypotheses of equal means between the two groups, versus the alternative hypothesis (`H1`) that the two means are different.
+
+```{r t_test_dose_1_2, echo = TRUE}
+t.test(filter(dataset_tg,dose==2)$len, filter(dataset_tg,dose==1)$len, paired = FALSE, var.equal = TRUE)
+```
+
+As results of the t.test we have enough evidence to reject the null hypothesis (Ho). It means if I increase the dosage from 1mg to 2mg creates  an positive effect on tooth length.
+
+#### Test 3: Growth Tooth Differences between supplements OJ and VC
+
+For this test we define the `Ho` as the null hypotheses of equal means between the two groups, versus the alternative hypothesis (`H1`) that the two means are different.
+
+```{r t_test_dose_0.5_1, echo = TRUE}
+t.test(filter(dataset_tg,dose==1)$len, filter(dataset_tg,dose==0.5)$len, paired = FALSE, var.equal = TRUE)
+```
+
+As results of the t.test we have enough evidence to reject the null hypothesis (Ho). It means if I increase the dosage from 0.5mg to 1mg creates  an positive effect on tooth length.
+
+## Conclusions
+
+* By the Test 1 we can conclude that supplement has no effect on tooth growth.
+
+* By the Test 2 and Test 3 we can conclude that increasing the dose level leads to increased tooth growth.
+
+
+## Assumptions
+
+* For t-tests regarding tooth length per dosage level, the variances are assumed to be equal for the three combinations of the two groups being compared.
