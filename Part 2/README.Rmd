@@ -1,9 +1,16 @@
 ---
-output: pdf_document
+author: 'Anderson Hitoshi Uyekita'
+date: !r lubridate::today(tzone = "America/Sao_Paulo")
+output:
+  pdf_document
 ---
+
 # Statistical inference - Course Project: Part 2
 
-## Overview
+* Author: `r 'Anderson Hitoshi Uyekita'`
+* Date: `r format(lubridate::today(tzone = "America/Sao_Paulo"), "%A, %d %B %Y")`
+
+## Synopsis
 
 This project aims to analyze the Tooth Growth database using confidence intervals and/or tests. This dataset has 60 observations and 3 variables, and a summary was provided with a brief of exploratory analysis. As a results of this project, supplement type has no effect on tooth growth and increasing the dose level leads to increased tooth growth.
 
@@ -16,8 +23,10 @@ library(datasets)
 ```
 
 ## Requeriments, Settings, and Load Data
-* Requirements to reproduce this exercise: `ggplot2`, `dplyr`, and `datasets`.
-* Make a copy of the original dataset and converting into a `dplyr` table.
+
+Please find the Requirements and Settings to reproduce this experiment in the APPENDIX section or Forking the [Github Repository](https://github.com/AndersonUyekita/statistical-inference_course-project/tree/main/Part%202).
+
+
 ```{r load_ToothGrowth, echo = TRUE}
 dataset_tg <- ToothGrowth
 dataset_tg <- tbl_df(dataset_tg)
@@ -108,3 +117,37 @@ As results of the t.test we have enough evidence to reject the null hypothesis (
 ## Assumptions
 
 * For t-tests regarding tooth length per dosage level, the variances are assumed to be equal for the three combinations of the two groups being compared.
+
+
+<!-- Adding a Page Break to starting a new APPENDIX page -->
+\newpage
+
+\center
+
+# APPENDIX
+
+\raggedright
+
+In order to reproduce this Course Project in any environment, please find below the Packages, Seed definition and `SessionInfo()`.
+
+### Requirements
+
+* Requirements to reproduce this exercise: `ggplot2`, `dplyr`, and `datasets`.
+* Make a copy of the original dataset and converting into a `dplyr` table.
+
+```r
+# Loading libraries
+library(ggplot2)
+
+# Force results to be in English
+Sys.setlocale("LC_ALL", "English.utf8")
+
+# Set seed
+set.seed(2022)
+```
+
+### Session Info
+
+```{r,echo=FALSE}
+sessionInfo()
+```
