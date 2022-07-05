@@ -1,4 +1,4 @@
-`Course Project` Statistical Inference - Part 1
+`Course Project` Statistical Inference
 ================
 
 -   👨🏻‍💻 Author: Anderson H Uyekita
