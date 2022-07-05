@@ -42,10 +42,7 @@ library(rmarkdown)
 
 --------------------------------------------------------------------------------
 
-# Course Project -- Part 1: Simulation Exercise
-
-* Author: `r 'Anderson Hitoshi Uyekita'`
-* Date: `r format(lubridate::ymd("2022-07-04", tz = "America/Sao_Paulo"), "%A, %d %B %Y")`
+# Part 1: Simulation Exercise
 
 ## Synopsis
 
