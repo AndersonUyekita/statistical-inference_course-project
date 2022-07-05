@@ -18,7 +18,7 @@
 
 ## Central Limit Theorem Exercise & Guinea Pigs Tooth Growth Analysis
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndersonUyekita/statistical-inference_course-project/master?urlpath=rstudio)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AndersonUyekita/statistical-inference_course-project/main?urlpath=rstudio)
 
 ## Synopsis
 
