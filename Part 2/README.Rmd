@@ -2,7 +2,6 @@
 title: '`Course Project` Statistical Inference'
 author: '`r if(knitr::is_html_output()) {"&#x1f468;&#x1F3FB;&#x200d;&#x1f4bb; Anderson H Uyekita"} else {NULL}`'
 output:
-  github_document: default
   html_document:
     sel_contained: true
     toc: true
@@ -10,6 +9,7 @@ output:
     toc_float:
       collapsed: false
       smooth_scroll: true
+  github_document: default
 params:
   author: "Anderson H Uyekita"
   course: 'Statistical Inference'
@@ -57,7 +57,7 @@ Part 2 of the Course Project aims to analyze the `ToothGrowth` database using co
 * Task 3: Use confidence intervals and/or hypothesis tests to compare tooth growth by supp and dose. (Only use the techniques from class, even if there's other approaches worth considering)
 * Task 4: State your conclusions and the assumptions needed for your conclusions.
 
-## 2. Requeriments, Settings, and Load Data
+## 2. Requeriments and Settings
 
 ```{r loading_packages,echo=FALSE,warning=FALSE,message=FALSE}
 # Loading libraries

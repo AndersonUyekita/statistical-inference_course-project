@@ -42,7 +42,7 @@ C dosage increases tooth growth.
 -   Task 4: State your conclusions and the assumptions needed for your
     conclusions.
 
-## 2. Requeriments, Settings, and Load Data
+## 2. Requeriments and Settings
 
 Please find the Requirements and Settings to reproduce this experiment
 in the APPENDIX section or Forking the [Github
