@@ -273,3 +273,17 @@ legend('topright',
        col = c("red", "blue", "orange"),
        lwd = 2)
 ```
+
+## A4. Q-Qplot
+
+According to the QQ plot, the points are close to the blue line, which
+means the average of the exponential sample follow a normal distribution
+by its quantiles.
+
+``` r
+# Creating a Q-q plot
+qqnorm(mean_sample_exponential, pch = 1, frame = FALSE)
+qqline(mean_sample_exponential, col = "tomato", lwd = 2)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
