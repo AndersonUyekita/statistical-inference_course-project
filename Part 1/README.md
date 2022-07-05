@@ -16,10 +16,7 @@
 
 ------------------------------------------------------------------------
 
-# Course Project – Part 1: Simulation Exercise
-
--   Author: Anderson Hitoshi Uyekita
--   Date: Monday, 04 July 2022
+# Part 1: Simulation Exercise
 
 ## Synopsis
 
