@@ -59,9 +59,9 @@ C dosage increases tooth growth.
 
 ## 2. Course Project Instructions
 
--   [🚀 Course Project Instructions – Part
+-   [📋 Course Project Instructions – Part
     1](https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%201/instructions.md)
--   [🚀 Course Project Instructions – Part
+-   [📋 Course Project Instructions – Part
     2](https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%202/instructions.md)
 
 ## 3. Rpubs
@@ -77,3 +77,10 @@ C dosage increases tooth growth.
     1](https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%201/statistical-inference_course-project_part-1.pdf)
 -   [📄 PDF file – Part
     2](https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%202/statistical-inference_course-project_part-2.pdf)
+
+## 5. Course Project Folder
+
+-   [🚀 Course Project Folder – Part
+    1](https://github.com/AndersonUyekita/statistical-inference_course-project/tree/main/Part%201)
+-   [🚀 Course Project Folder – Part
+    2](https://github.com/AndersonUyekita/statistical-inference_course-project/tree/main/Part%202)

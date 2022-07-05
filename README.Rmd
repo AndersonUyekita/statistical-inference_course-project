@@ -67,8 +67,8 @@ Part 2 of the Course Project aims to analyze the ToothGrowth database using conf
 
 ## 2. Course Project Instructions
 
-* [&#x1F680; Course Project Instructions -- Part 1][instructions-part-1]
-* [&#x1F680; Course Project Instructions -- Part 2][instructions-part-2]
+* [&#x1F4CB; Course Project Instructions -- Part 1][instructions-part-1]
+* [&#x1F4CB; Course Project Instructions -- Part 2][instructions-part-2]
 
 [instructions-part-1]: https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%201/instructions.md
 [instructions-part-2]: https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%202/instructions.md
@@ -90,3 +90,11 @@ Part 2 of the Course Project aims to analyze the ToothGrowth database using conf
 
 [pdf-file-part-1]: https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%201/statistical-inference_course-project_part-1.pdf
 [pdf-file-part-2]: https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%202/statistical-inference_course-project_part-2.pdf
+
+## 5. Course Project Folder
+
+* [&#x1F680; Course Project Folder -- Part 1][course-project-folder-part-1]
+* [&#x1F680; Course Project Folder -- Part 2][course-project-folder-part-2]
+
+[course-project-folder-part-1]: https://github.com/AndersonUyekita/statistical-inference_course-project/tree/main/Part%201
+[course-project-folder-part-2]: https://github.com/AndersonUyekita/statistical-inference_course-project/tree/main/Part%202
