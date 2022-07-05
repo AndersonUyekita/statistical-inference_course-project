@@ -12,7 +12,7 @@
     -   🧑‍🏫 Instructor: Brian Caffo
 -   📆 Week 4
     -   🚦 Start: Friday, 01 July 2022
-    -   🏁 Finish: Tuesday, 05 July 2022
+    -   🏁 Finish: Monday, 04 July 2022
 
 ------------------------------------------------------------------------
 
