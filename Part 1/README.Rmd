@@ -2,13 +2,13 @@
 title: '`Course Project` Statistical Inference'
 author: '`r if(knitr::is_html_output()) {"&#x1f468;&#x1F3FB;&#x200d;&#x1f4bb; Anderson H Uyekita"} else {NULL}`'
 output:
+  github_document: default
   html_document:
     toc: true
     toc_depth: 4
     toc_float:
       collapsed: false
       smooth_scroll: true
-  github_document: default
 params:
   author: "Anderson H Uyekita"
   course: 'Statistical Inference'
@@ -20,10 +20,10 @@ params:
   course_finish: !r lubridate::ymd("2022/07/04", tz = "America/Sao_Paulo")
   week: "Week 4"
   slug: 'Week%204'
-  rpubs: 'https://rpubs.com/AndersonUyekita/course-project_statistical-inference'
-  project_repo: 'https://github.com/AndersonUyekita/statistical-inference_course-project'
+  rpubs: 'https://rpubs.com/AndersonUyekita/part-1_course-project_statistical-inference'
+  project_repo: 'https://github.com/AndersonUyekita/statistical-inference_course-project/tree/main/Part%201'
   codebook: 'https://github.com/AndersonUyekita/statistical-inference_course-project/blob/master/codebook.md'
-  instructions: 'https://github.com/AndersonUyekita/statistical-inference_course-project/blob/master/instructions.md'
+  instructions: 'https://github.com/AndersonUyekita/statistical-inference_course-project/blob/main/Part%201/instructions.md'
 always_allow_html: true
 ---
 
@@ -39,6 +39,7 @@ library(rmarkdown)
 `r sprintf(fmt = "* &#x1F4C6; %s", params$week)`
     `r sprintf(fmt = "* &#x1F6A6; Start: %s", format(params$course_start, "%A, %d %B %Y"))`
     `r sprintf(fmt = "* &#x1F3C1; Finish: %s", format(params$course_finish, "%A, %d %B %Y"))`
+`r if(!knitr::is_html_output()) {sprintf(fmt = "* &#x1F30E; Rpubs: [Interactive Document](%s)", params$rpubs)}else{sprintf(fmt = "* &#x1F4E6; Github Repository: [Static Document](%s){target='_blank' rel='noopener'}", params$project_repo)}`
 
 --------------------------------------------------------------------------------
 

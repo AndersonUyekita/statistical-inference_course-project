@@ -13,6 +13,8 @@
 -   📆 Week 4
     -   🚦 Start: Friday, 01 July 2022
     -   🏁 Finish: Monday, 04 July 2022
+-   🌎 Rpubs: [Interactive
+    Document](https://rpubs.com/AndersonUyekita/part-1_course-project_statistical-inference)
 
 ------------------------------------------------------------------------
 
