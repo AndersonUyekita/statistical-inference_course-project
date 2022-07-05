@@ -1,4 +1,4 @@
-`Course Project` Statistical Inference - Part 2
+`Course Project` Statistical Inference
 ================
 
 -   👨🏻‍💻 Author: Anderson H Uyekita
@@ -16,10 +16,7 @@
 
 ------------------------------------------------------------------------
 
-# Course Project – Part 2: Basic Inferential Data Analysis
-
--   Author: Anderson Hitoshi Uyekita
--   Date: Monday, 04 July 2022
+# Part 2: Basic Inferential Data Analysis
 
 ## Synopsis
 
