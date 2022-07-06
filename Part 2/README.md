@@ -159,19 +159,19 @@ using different `Dose`.**
 | ![H_0: \\mu\_{(len,1.0)} = \\mu\_{(len,0.5)}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;H_0%3A%20%5Cmu_%7B%28len%2C1.0%29%7D%20%3D%20%5Cmu_%7B%28len%2C0.5%29%7D "H_0: \mu_{(len,1.0)} = \mu_{(len,0.5)}") and ![H_1: \\mu\_{(len,1.0)} \\neq \\mu\_{(len,0.5)}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;H_1%3A%20%5Cmu_%7B%28len%2C1.0%29%7D%20%5Cneq%20%5Cmu_%7B%28len%2C0.5%29%7D "H_1: \mu_{(len,1.0)} \neq \mu_{(len,0.5)}") |    0.0000001     |  \[ 6.28, 11.98\]   | Reject ![H_0](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;H_0 "H_0") |
 | ![H_0: \\mu\_{(len,2.0)} = \\mu\_{(len,0.5)}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;H_0%3A%20%5Cmu_%7B%28len%2C2.0%29%7D%20%3D%20%5Cmu_%7B%28len%2C0.5%29%7D "H_0: \mu_{(len,2.0)} = \mu_{(len,0.5)}") and ![H_1: \\mu\_{(len,2.0)} \\neq \\mu\_{(len,0.5)}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;H_1%3A%20%5Cmu_%7B%28len%2C2.0%29%7D%20%5Cneq%20%5Cmu_%7B%28len%2C0.5%29%7D "H_1: \mu_{(len,2.0)} \neq \mu_{(len,0.5)}") | 0.00000000000003 |   \[12.8, 18.2\]    | Reject ![H_0](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;H_0 "H_0") |
 
-All 3 (three) tests in Table 1 have evidence **strong evidence** that
-increasing dosage produces a higher tooth growth.
+All 3 (three) tests in Table 1 show **strong evidence** that increasing
+dosage produces higher tooth growth.
 
 ## 6. Conclusions
 
 > Task 4: State your conclusions and the assumptions needed for your
 > conclusions.
 
-Finally, by the outcome of Hypothesis 1 and 2, there is no evidence to
-say that Orange Juice performance is different than Ascorbic Acid, so it
-is possible to conclude both supplements have equal performance.
-However, there is strong evidence that increasing the dosage will boost
-tooth growth.
+Finally, by the outcome of Hypothesis 1, there is no evidence to say
+that Orange Juice performance is different than Ascorbic Acid, so it is
+possible to conclude both supplements have equal performance. However,
+according to Hypothesis 2, there is strong evidence that increasing the
+dosage will boost tooth growth.
 
 **Assumptions**
 
